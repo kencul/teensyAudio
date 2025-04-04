@@ -1,7 +1,5 @@
 #include <Audio.h>
 #include <Wire.h>
-#include <SPI.h>
-#include <SD.h>
 #include <SerialFlash.h>
 
 // GUItool: begin automatically generated code
@@ -47,7 +45,6 @@ void setOutputVolume(float val){
 }
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600); // Turn on serial monitoring for arduino IDE
   AudioMemory(60); // Allocate x 
   sgtl5000_1.enable(); // turn on audio codec chip
