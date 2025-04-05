@@ -12,7 +12,9 @@ void AudioSineVibrato::update(void)
     uint32_t i, ph, inc, index, scale, incPM, vibPh, vibInc;
     int32_t val1, val2;
 
+    // Calculate if magnitude is not 0
     if (magnitude) {
+        // allocate audio block and check if not NULL
         block = allocate();
         if (block) {
             ph = phase_accumulator;
