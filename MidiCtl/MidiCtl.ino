@@ -48,36 +48,36 @@ void loop()
 
     // button 0: C
     if (button0.fallingEdge()) {
-        usbMIDI.sendNoteOn(72, 127, 1);  // Note 60, velocity 127, channel 1
+        usbMIDI.sendNoteOn(72, 127, 1);  // Note 72, velocity 127, channel 1
         digitalWrite(LED_BUILTIN, HIGH); // Visual feedback
         //Serial.println("Pressed!");
     }
     if (button0.risingEdge()) {
-        usbMIDI.sendNoteOff(72, 0, 1);   // Note 60, velocity 0, channel 1
+        usbMIDI.sendNoteOff(72, 0, 1);   // Note 72, velocity 0, channel 1
         digitalWrite(LED_BUILTIN, LOW);  // Visual feedback
         //Serial.println("Released!");
     }
 
     // button 1: D
     if (button1.fallingEdge()) {
-        usbMIDI.sendNoteOn(74, 127, 1);  // Note 60, velocity 127, channel 1
+        usbMIDI.sendNoteOn(74, 127, 1);  // Note 74, velocity 127, channel 1
         digitalWrite(LED_BUILTIN, HIGH); // Visual feedback
         //Serial.println("Pressed!");
     }
     if (button1.risingEdge()) {
-        usbMIDI.sendNoteOff(74, 0, 1);   // Note 60, velocity 0, channel 1
+        usbMIDI.sendNoteOff(74, 0, 1);   // Note 74, velocity 0, channel 1
         digitalWrite(LED_BUILTIN, LOW);  // Visual feedback
         //Serial.println("Released!");
     }
 
     // button 3: E
     if (button2.fallingEdge()) {
-        usbMIDI.sendNoteOn(76, 127, 1);  // Note 60, velocity 127, channel 1
+        usbMIDI.sendNoteOn(76, 127, 1);  // Note 76, velocity 127, channel 1
         digitalWrite(LED_BUILTIN, HIGH); // Visual feedback
         //Serial.println("Pressed!");
     }
     if (button2.risingEdge()) {
-        usbMIDI.sendNoteOff(76, 0, 1);   // Note 60, velocity 0, channel 1
+        usbMIDI.sendNoteOff(76, 0, 1);   // Note 76, velocity 0, channel 1
         digitalWrite(LED_BUILTIN, LOW);  // Visual feedback
         //Serial.println("Released!");
     }
