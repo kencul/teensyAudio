@@ -145,13 +145,13 @@ void setup() {
 
 void loop() {
   usbMIDI.read();
-    // Periodically print CPU/memory usage
-    static unsigned long lastPrint = 0;
-    if (millis() - lastPrint > 1000) {
-        lastPrint = millis();
-        Serial.printf("CPU: %.1f%%, Mem: %d/%d\n", 
-                     AudioProcessorUsage(), 
-                     AudioMemoryUsage(), 
-                     AudioMemoryUsageMax());
-    }
+  // Periodically print CPU/memory usage
+  static unsigned long lastPrint = 0;
+  if (millis() - lastPrint > 1000) {
+      lastPrint = millis();
+      Serial.printf("CPU: %.1f%%, Mem: %d/%d\n", 
+                    AudioProcessorUsage(), 
+                    AudioMemoryUsage(), 
+                    AudioMemoryUsageMax());
+  }
 }
