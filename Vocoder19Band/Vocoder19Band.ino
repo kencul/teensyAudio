@@ -444,7 +444,7 @@ void OnNoteOn(byte channel, byte note, byte velocity) {
   sine[freeVoice].frequency(freq);
   env[freeVoice].noteOn();
 
-  Serial.printf("Note freq: %f, Note amp: %f, Note voice: %d\n", freq, amp, freeVoice);
+  //Serial.printf("Note freq: %f, Note amp: %f, Note voice: %d\n", freq, amp, freeVoice);
 }
 
 void OnNoteOff(byte channel, byte note, byte velocity) {
